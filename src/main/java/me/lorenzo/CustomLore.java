@@ -1,7 +1,7 @@
-package me.justalorenzo;
+package me.lorenzo;
 
-import me.justalorenzo.commands.SetName;
-import me.justalorenzo.commands.SetLore;
+import me.lorenzo.commands.SetName;
+import me.lorenzo.commands.SetLore;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class CustomLore extends JavaPlugin {
@@ -17,7 +17,7 @@ public class CustomLore extends JavaPlugin {
 
     void initializeCommands() {
         this.getCommand(setNameCommand).setExecutor(setName);
-        //this.getCommand(setNameCommand).setExecutor(setName);
+        this.getCommand(setLoreCommand).setExecutor(setLore);
     }
 
 

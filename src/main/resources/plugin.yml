@@ -1,8 +1,11 @@
-main: me.justalorenzo.CustomLore
+main: me.lorenzo.CustomLore
 name: CustomLore
 version: 1.0
 
 commands:
   setname:
     usage: </command>
-    description: set an item's name!
+    description: Set an item's name!
+  setlore:
+    usage: </command>
+    description: Set an item's lore!

@@ -1,6 +1,6 @@
-package me.justalorenzo.commands;
+package me.lorenzo.commands;
 
-import me.justalorenzo.CustomLore;
+import me.lorenzo.CustomLore;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -9,6 +9,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+
+import static me.lorenzo.util.StringManipulation.getArguments;
 
 public class SetName implements CommandExecutor {
 
@@ -51,13 +53,6 @@ public class SetName implements CommandExecutor {
     }
 
 
-    String getArguments(String[] s) {
-        String arguments = "";
-        for (String args : s) {
-            arguments += args + " ";
-        }
 
-        return ChatColor.translateAlternateColorCodes('&', arguments);
-    }
 
 }
